@@ -122,7 +122,35 @@
 								</div>
 							</div>
 						</div>
+
+
+						<!--Video-->
+						<center>
+							<br/>
+							<h2>We hope to enter our drones in competitions like this one in Australia.</h2>
+							<h4 style="color:#660032">Click the video to toggle sound.</h3>
+							<br/>
+							<video autoplay muted loop id="bgvid">
+								<source src="images/mainvideo.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+
+
+							<script>
+								var video = document.getElementById("bgvid");
+
+								video.addEventListener("click", function() {
+								  if (video.muted) {
+									video.muted = false;
+								  } else {
+									video.muted = true;
+								  }
+								}, false);
+							</script>
+						</center>
 					</div>
+
+
 
 			<!-- Footer -->
 				<div id="footer-wrapper">
