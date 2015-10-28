@@ -1534,12 +1534,21 @@
 					}
 
 				ul.social li a.fa-twitter {
-					background: #2daae4;
+					background: #2daae4
 				}
 
 					ul.social li a.fa-twitter:hover {
 						background: #3dbaf4;
 					}
+
+				ul.social li a.fa-cal {
+					background: #660032;
+				}
+
+					ul.social li a.fa-cal:hover {
+						background: #660032;
+					}
+
 
 				ul.social li a.fa-dribbble {
 					background: #c4376b;
