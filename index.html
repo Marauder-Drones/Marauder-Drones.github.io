@@ -47,7 +47,7 @@
 											<header>
 												<h2>Build</h2>
 											</header>
-											<p style="font-size:1.5em; line-height:1.8em;">The build team turns models into a real-life prototype.</p>
+											<p style="font-size:1.5em; line-height:1.8em;">The electrical and mechanical teams turn models into a real-life prototype.</p>
 										</section>
 									</div>
 									<div class="4u 12u(mobile)">
@@ -63,7 +63,8 @@
 								<footer>
 									<ul class="actions">
 										<li><a href="contact.html" class="button big" style="background-color:#660032;">Sign up today!</a></li>
-										<li><a href="contact.html" class="button alt big">Sponsor Us!</a></li>
+										<li><a href="#main-wrapper" class="button alt big">Meet The Club!</a></li>
+										<li><a href="contact.html" class="button big" style="background-color:#660032;">Sponsor Us!</a></li>
 									</ul>
 									<ul class="social">
 										<li><a class="icon fa-facebook" target="_blank" href="https://www.facebook.com/groups/450184508440088/"><span class="label">Facebook</span></a></li>
@@ -81,6 +82,31 @@
 
 					</div>
 				</div>
+
+				<!--Video-->
+				<center>
+					<br/>
+					<h2 style="color:white">We hope to enter our drones in competitions like this one in Australia.</h2>
+					<h4 style="color:gray">Click the video to toggle sound.</h3>
+					<br/>
+					<video autoplay muted loop id="bgvid" width="70%">
+						<source src="images/mainvideo.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+
+
+					<script>
+						var video = document.getElementById("bgvid");
+
+						video.addEventListener("click", function() {
+						  if (video.muted) {
+							video.muted = false;
+						  } else {
+							video.muted = true;
+						  }
+						}, false);
+					</script>
+				</center>
 
 				<!--Photos of club-->
 					<div id="main-wrapper">
@@ -121,33 +147,49 @@
 										</section>
 								</div>
 							</div>
+
+							<!--Execs-->
+							<br/>
+							<div>
+								<header class="major">
+									<h2 style="background-color:#F7F7F7">Meet The Executives!</h2>
+								</header>
+
+								<div class="row">
+									<img src="profiles/andres.png" width="200em" height="200em" style="margin-left:2em;"></img>
+									<h3 style="text-align:center; margin-top:3em;">Andres Hurtado<br/>President</h3>
+
+									<img src="profiles/erin.png" width="200em" height="200em" style="margin-right:2em; float:right;"></img>
+									<h3 style="text-align:center; float:right; margin-top:3em;">Erin Varey<br/>Vice President</h3>
+								</div>
+
+								<div class="row">
+									<img src="profiles/wajih.png" width="200em" height="200em" style="margin-left:2em;"></img>
+									<h3 style="text-align:center; margin-top:3em;">Wajih Khawaja<br/>Design Team Leader</h3>
+
+									<img src="profiles/natasha.png" width="200em" height="200em" style="margin-right:2em; float:right;"></img>
+									<h3 style="text-align:center; float:right; margin-top:3em;">Natasha Carew<br/>Build Team Leader</h3>
+								</div>
+
+								<div class="row">
+									<img src="profiles/calvin.png" width="200em" height="200em" style="margin-left:2em;"></img>
+									<h3 style="text-align:center; margin-top:3em;">Calvin Zhu<br/>Electrical Team Leader</h3>
+
+									<img src="profiles/nik.png" width="200em" height="200em" style="margin-right:2em; float:right;"></img>
+									<h3 style="text-align:center; float:right; margin-top:3em;">Nik Novak<br/>Software Team Leader</h3>
+								</div>
+
+								<div class="row">
+									<img src="profiles/haden.png" width="200em" height="200em" style="margin-left:2em;"></img>
+									<h3 style="text-align:center; margin-top:3em;">Haden Lee<br/>Public Relations</h3>
+
+									<img src="profiles/nich.png" width="200em" height="200em" style="margin-right:2em; float:right;"></img>
+									<h3 style="text-align:center; float:right; margin-top:3em;">Nich Moss<br/>Mechanical Team Leader</h3>
+								</div>
+							</div>
+
+							<!---End of execs--->
 						</div>
-
-
-						<!--Video-->
-						<center>
-							<br/>
-							<h2>We hope to enter our drones in competitions like this one in Australia.</h2>
-							<h4 style="color:#660032">Click the video to toggle sound.</h3>
-							<br/>
-							<video autoplay muted loop id="bgvid" width="70%">
-								<source src="images/mainvideo.mp4" type="video/mp4">
-								Your browser does not support the video tag.
-							</video>
-
-
-							<script>
-								var video = document.getElementById("bgvid");
-
-								video.addEventListener("click", function() {
-								  if (video.muted) {
-									video.muted = false;
-								  } else {
-									video.muted = true;
-								  }
-								}, false);
-							</script>
-						</center>
 					</div>
 
 
@@ -178,7 +220,7 @@
 								<!-- Copyright -->
 									<div id="copyright">
 										<ul class="links">
-											<li>&copy; Marauder Drones. All rights reserved.</li><li>Design: <a target="_blank" href="https://rationalcoding.github.io">Rational Coding</a></li>
+											<li>&copy; Marauder Drones. All rights reserved.</li><li>Design: <a target="_blank" href="https://rationalcoding.github.io">Thomas Mullen</a></li>
 										</ul>
 									</div>
 
