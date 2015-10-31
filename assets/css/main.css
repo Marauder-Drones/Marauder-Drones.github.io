@@ -1955,7 +1955,7 @@
 					}
 
 					#nav > ul > li.current > a {
-						background: #d52349;
+						background: #660032;
 						color: #fff !important;
 						font-weight: 700;
 					}
@@ -2442,4 +2442,121 @@
     height:350px;
     line-height:200px;
     font-size:42px;
+}
+
+
+.bodyF {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+
+form {
+  max-width: 70%;
+  margin: 10px auto;
+  padding: 40px 40px 40px 40px;
+  background: #231D1F;
+  border-radius: 8px;
+}
+
+.h1F{
+  margin: 0 0 30px 0 !important;
+  text-align: center !important;
+  color:white !important;
+  font-size: 3em !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+.selectF {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+.buttonF {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #660032;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #660032;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+.fieldsetF {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.labelF {
+  display: block;
+  margin-bottom: 8px;
+  color:white;
+}
+
+.labelF.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #660032;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  formF {
+    max-width: 480px;
+  }
+
 }
