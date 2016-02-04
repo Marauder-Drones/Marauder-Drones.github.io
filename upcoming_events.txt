@@ -4,7 +4,7 @@
 #Seperate with commas!
 #Eg. Nov,11,Design Team Meeting,Friday 3:30pm in BSB-B136 (Room tenative to change)
 
-Jan,15,Build/Design Team Meeting (Others welcome!), Friday 3:30pm in (BSB B136)
+Feb,5,Build/Software/Electrical Meeting (Others welcome!), Friday 3:30pm in (BSB B136)
 
 
 #When you are done, run UpdateCalendar.py
