@@ -1447,10 +1447,11 @@ ol.default li {
     }
     /* Wrappers */
     #header-wrapper {
-        padding: 4.5em 0 4em 0;
+        padding: 4em 0 0 0;
+        border-style: none;
     }
     #main-wrapper {
-        padding: 4em 0 4em 0;
+        padding: 2em 0 0em 0;
     }
     #footer-wrapper {
         padding: 4em 0 4em 0;
@@ -1547,13 +1548,16 @@ ol.default li {
     /* Banner */
     #banner {
         position: relative;
-        padding: 8em 0;
-        margin: 4em 0 0 0;
+        margin: 0 0 0 0;
+        height: 10em;
+        background-color: #660032;
+        padding-top: 1em;
     }
     #banner header {
         display: inline-block;
-        padding: 2.5em 5em;
+        padding: 2.5em 5em 1.5em 5em;
         border-radius: 5px;
+
     }
     #banner header h2 {
         font-size: 2.5em;
@@ -1615,6 +1619,11 @@ ol.default li {
     #copyright .links {
         padding: 0.85em 2.25em 0.85em 2.25em;
     }
+    
+    #intro .button.four{
+        min-width: 10em;
+        width: 10em;
+    }
 }
 
 /* Tablet */
@@ -1664,8 +1673,17 @@ ol.default li {
     }
     /* Banner */
     #banner {
-        padding: 6em 0;
-        margin: 3em 0 0 0;
+        position: relative;
+        margin: 0 0 0 0;
+        height: 10em;
+        background-color: #660032;
+        padding-top: 1em;
+    }
+    #banner header {
+        display: inline-block;
+        padding: 2.5em 5em 1.5em 5em;
+        border-radius: 5px;
+
     }
     /* Intro */
     #intro {
@@ -1684,6 +1702,7 @@ ol.default li {
     #copyright {
         margin: 0;
     }
+
 }
 
 /* Mobile */
@@ -1824,8 +1843,8 @@ ol.default li {
     }
     /* Banner */
     #banner {
-        margin: 2em 0 4em 0 !important;
-        padding: 6em 0;
+        margin: 2em 0 0em 0 !important;
+        padding: 2em 0;
     }
     #banner header {
         padding: 1.5em 1em 1.5em 1em;
