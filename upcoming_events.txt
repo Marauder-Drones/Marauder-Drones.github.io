@@ -2,9 +2,9 @@
 #Comments are denoted with a #
 #Format is Month,Date,Name,Description
 #Seperate with commas!
-#Eg. Nov,11,Design Team Meeting,Friday 3:30pm in BSB-B136 (Room tenative to change)
+#Eg. Mar,11,Design Team Meeting,Friday 3:30pm in BSB-B136 (Room tenative to change)
 
-Feb,5,Build/Software/Electrical Meeting (Others welcome!), Friday 3:30pm in (BSB B136)
+Mar,4,Build/Software/Design Meeting (Others welcome!), Friday 3:30pm in (BSB B139)
 
 
-#When you are done, run UpdateCalendar.py
+#When you are done, save and run UpdateCalendar.py
