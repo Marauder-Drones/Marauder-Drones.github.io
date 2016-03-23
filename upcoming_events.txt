@@ -4,7 +4,6 @@
 #Seperate with commas!
 #Eg. Mar,11,Design Team Meeting,Friday 3:30pm in BSB-B136 (Room tenative to change)
 
-
-
+ , ,Meetings will resume after exams.,Stay tuned for announcements!
 
 #When you are done, save and run UpdateCalendar.py
