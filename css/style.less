@@ -62,21 +62,13 @@
 
 /* Large Devices, Wide Screens */
 
-@monitors: ~"only screen and (min-width : 1400px)";
+@monitors: ~"only screen and (min-width : 1500px)";
 html,
 body {
     background: @background;
     font-family: 'ApercuLight';
     width: 100%;
     overflow-x: hidden;
-}
-
-body {
-    @media @monitors {
-        padding-left: 10%;
-        padding-right: 10%;
-        width: 80%;
-    }
 }
 
 h1 {
@@ -257,6 +249,9 @@ p,a {
             @media @tablets {
                 left: 120px;
             }
+            @media @monitors {
+                left: 10%;
+            }
         }
         &.right {
             text-align: right;
@@ -265,7 +260,16 @@ p,a {
             @media @tablets {
                 right: 120px;
             }
+            @media @monitors {
+                right: 10%;
+            }
         }
+    }
+    
+    .row {
+        padding-left: 10%;
+        width: 80%;
+        padding-right: 10%;
     }
 }
 
@@ -618,6 +622,12 @@ input[type="submit"],
         -webkit-column-count: 1;
         column-count: 1;
         column-gap: 0px;
+        
+        @media @monitors {
+            width: 80%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
         
         img {
             /* Just in case there are inline attributes */

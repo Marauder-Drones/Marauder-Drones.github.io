@@ -39,13 +39,6 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-@media only screen and (min-width : 1400px) {
-  body {
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 80%;
-  }
-}
 h1 {
   font-family: 'ApercuBold';
   font-size: 58px;
@@ -228,6 +221,11 @@ a {
     left: 120px;
   }
 }
+@media only screen and (min-width : 1500px) {
+  .section .header.left {
+    left: 10%;
+  }
+}
 .section .header.right {
   text-align: right;
   right: 30px;
@@ -237,6 +235,16 @@ a {
   .section .header.right {
     right: 120px;
   }
+}
+@media only screen and (min-width : 1500px) {
+  .section .header.right {
+    right: 10%;
+  }
+}
+.section .row {
+  padding-left: 10%;
+  width: 80%;
+  padding-right: 10%;
 }
 button,
 input[type="submit"],
@@ -397,7 +405,7 @@ input[type="submit"]:hover,
     transform: translateY(180px);
   }
 }
-@media only screen and (min-width : 1400px) {
+@media only screen and (min-width : 1500px) {
   .intro .drones .drone-wrapper.b {
     transform: translateY(230px);
   }
@@ -573,6 +581,13 @@ input[type="submit"]:hover,
   column-count: 1;
   column-gap: 0px;
 }
+@media only screen and (min-width : 1500px) {
+  .gallery.section .gallery {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 .gallery.section .gallery img {
   /* Just in case there are inline attributes */
   width: 100% !important;
@@ -593,7 +608,7 @@ input[type="submit"]:hover,
     column-count: 3;
   }
 }
-@media only screen and (min-width : 1400px) {
+@media only screen and (min-width : 1500px) {
   .gallery.section .gallery {
     -moz-column-count: 4;
     -webkit-column-count: 4;
@@ -728,7 +743,7 @@ input[type="submit"]:hover,
     max-height: 400px;
   }
 }
-@media only screen and (min-width : 1400px) {
+@media only screen and (min-width : 1500px) {
   .modal .sketchfab-embed-wrapper iframe {
     max-height: 900px;
   }
