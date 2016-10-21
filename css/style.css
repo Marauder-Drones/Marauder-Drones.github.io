@@ -630,11 +630,6 @@ a {
     width: 60%;
   }
 }
-@media only screen and (min-width : 1400px) {
-  .modal {
-    bottom: auto;
-  }
-}
 .modal button.close {
   outline: none;
   width: 50px;
