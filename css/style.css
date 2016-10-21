@@ -601,16 +601,33 @@ a {
   right: 0;
   width: 100%;
 }
+@media only screen and (min-width : 768px) {
+  .modal {
+    top: 8%;
+    left: 20%;
+    width: 60%;
+  }
+}
+@media only screen and (min-width : 1400px) {
+  .modal {
+    bottom: auto;
+  }
+}
 .modal button.close {
   outline: none;
   width: 30px;
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 10px;
   font-size: 30px;
   padding: 0;
   padding-bottom: 4px;
   border: #660032 solid 2px;
+}
+@media only screen and (min-width : 768px) {
+  .modal button.close {
+    position: absolute;
+  }
 }
 .modal p {
   margin-right: 30px;
@@ -624,18 +641,6 @@ a {
 @media only screen and (min-width : 768px) {
   .modal .modal-content {
     right: 40px;
-  }
-}
-@media only screen and (min-width : 768px) {
-  .modal {
-    top: 8%;
-    left: 20%;
-    width: 60%;
-  }
-}
-@media only screen and (min-width : 1400px) {
-  .modal {
-    bottom: auto;
   }
 }
 .modal label.checkbox {
@@ -666,7 +671,7 @@ a {
   width: 100%;
 }
 .modal .spacer {
-  height: 30px;
+  height: 28px;
 }
 .modal-overlay {
   background: black;
