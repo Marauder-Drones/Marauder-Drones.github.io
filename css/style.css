@@ -576,11 +576,23 @@ a {
 }
 .footer span.copy,
 .footer span a.copy {
-  float: left;
+  display: block;
+}
+@media only screen and (min-width : 480px) {
+  .footer span.copy,
+  .footer span a.copy {
+    float: left;
+  }
 }
 .footer span.creator,
 .footer span a.creator {
-  float: right;
+  display: block;
+}
+@media only screen and (min-width : 480px) {
+  .footer span.creator,
+  .footer span a.creator {
+    float: right;
+  }
 }
 /* Modal */
 .cta {

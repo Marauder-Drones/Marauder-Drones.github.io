@@ -618,11 +618,17 @@ p,a {
         
         
         &.copy {
-            float: left;
+            display: block;
+            @media @phones {
+                float: left;
+            }
         }
         
         &.creator {
-            float: right;
+            display: block;
+            @media @phones {
+                float: right;
+            }
         }
     }
 }
