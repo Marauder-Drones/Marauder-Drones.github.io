@@ -71,6 +71,14 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    @media @monitors {
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 80%;
+    }
+}
+
 h1 {
     font-family: 'ApercuBold';
     font-size: 58px;
@@ -482,7 +490,6 @@ input[type="submit"],
         }
         p {
             width: 95%;
-            max-width: 900px;
             margin-right: 5%;
             text-align: left;
         }
@@ -507,7 +514,6 @@ input[type="submit"],
         }
         p {
             width: 95%;
-            max-width: 900px;
             margin-left: 5%;
             text-align: left;
         }
@@ -756,6 +762,10 @@ input[type="submit"],
         
             @media @phones {
                 max-height: 400px
+            }
+            
+            @media @monitors {
+                max-height: 900px;
             }
         }
     }

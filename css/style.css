@@ -39,6 +39,13 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+@media only screen and (min-width : 1400px) {
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+  }
+}
 h1 {
   font-family: 'ApercuBold';
   font-size: 58px;
@@ -454,7 +461,6 @@ input[type="submit"]:hover,
 }
 .about.section .col p {
   width: 95%;
-  max-width: 900px;
   margin-right: 5%;
   text-align: left;
 }
@@ -478,7 +484,6 @@ input[type="submit"]:hover,
 }
 .prototype.section .col p {
   width: 95%;
-  max-width: 900px;
   margin-left: 5%;
   text-align: left;
 }
@@ -721,6 +726,11 @@ input[type="submit"]:hover,
 @media only screen and (min-width : 480px) {
   .modal .sketchfab-embed-wrapper iframe {
     max-height: 400px;
+  }
+}
+@media only screen and (min-width : 1400px) {
+  .modal .sketchfab-embed-wrapper iframe {
+    max-height: 900px;
   }
 }
 .modal .spacer {
