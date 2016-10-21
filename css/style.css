@@ -87,6 +87,13 @@ label.checkbox {
   width: 110px;
   text-align: center;
   cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 label.checkbox:hover {
   color: #fff;
@@ -239,6 +246,13 @@ input[type="submit"],
   transition: all .3s;
   -webkit-appearance: none;
   font-family: ApercuLight;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 button:hover,
 input[type="submit"]:hover,

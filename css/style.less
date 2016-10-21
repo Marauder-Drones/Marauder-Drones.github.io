@@ -130,6 +130,14 @@ label.checkbox {
     text-align: center;
     cursor: pointer;
     
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    
     &:hover {
         color: @background;
         background: @primary;
@@ -274,6 +282,14 @@ input[type="submit"],
         background: @background;
         outline: solid 1px @primary;
     }
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
 
 .button {
@@ -717,6 +733,8 @@ input[type="submit"],
         @media @phones {
             font-size: 16px;
         }
+        
+        
     }
     input[type="text"],
     input[type="email"],
