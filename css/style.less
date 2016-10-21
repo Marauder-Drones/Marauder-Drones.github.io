@@ -37,11 +37,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: @secondary;
+    background-color: @primary;
 }
 
 ::-webkit-scrollbar-corner {
-    background-color: @background;
+    background-color: @primary;
 }
 
 
@@ -102,7 +102,7 @@ h3.pre {
 h3.post {
     padding-bottom: 2px;
     color: @primary;
-    border-bottom: solid @primary 1px;
+    border-bottom: solid @primary 5px;
     font-weight: 500;
     font-family: ApercuBold;
 }
@@ -129,6 +129,7 @@ label.checkbox {
     width: 110px;
     text-align: center;
     cursor: pointer;
+    
     &:hover {
         color: @background;
         background: @primary;
@@ -136,13 +137,13 @@ label.checkbox {
     div {
         width: 100%;
         height: 100%;
-        outline: solid 2px @primary;
+        outline: solid 1px @primary;
         transition: all .2s;
     }
     input[type="checkbox"]:checked ~ div {
         color: @background;
-        background: @primary;
-        outline: solid 2px @background;
+        background: #4ABF19;
+        outline: solid 1px @background;
     }
     input[type="checkbox"] {
         display: none;
@@ -256,8 +257,8 @@ p,a {
 button,
 input[type="submit"],
 .button {
-    background: @background;
-    color: @primary;
+    background: @primary;
+    color: @background;
     height: 30px;
     font-size: 18px;
     line-height: 0;
@@ -269,8 +270,9 @@ input[type="submit"],
     font-family: ApercuLight;
     
     &:hover {
-        color: @background;
-        background: @primary;
+        color: @primary;
+        background: @background;
+        outline: solid 1px @primary;
     }
 }
 
