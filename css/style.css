@@ -331,8 +331,8 @@ a {
 .intro .drones .drone-wrapper.a {
   left: 10%;
   transform: translateY(-150px);
-  animation-duration: 3s;
-  animation-delay: 1.5s;
+  animation-duration: 2.3s;
+  animation-delay: 1s;
 }
 @media only screen and (min-width : 768px) {
   .intro .drones .drone-wrapper.a {
@@ -345,8 +345,8 @@ a {
 .intro .drones .drone-wrapper.b {
   left: 50%;
   transform: translateY(230px);
-  animation-duration: 2.7s;
-  animation-delay: 2.2s;
+  animation-duration: 2.1s;
+  animation-delay: .5s;
 }
 @media only screen and (min-width : 480px) {
   .intro .drones .drone-wrapper.b {
@@ -373,7 +373,7 @@ a {
 }
 .intro .drones .drone-wrapper.c {
   left: 85%;
-  animation-duration: 2.5s;
+  animation-duration: 2s;
   animation-delay: 0s;
   display: none;
 }
