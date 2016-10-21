@@ -133,6 +133,7 @@ textarea {
   transition: all .2s;
   display: block;
   margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 input[type='text']:focus,
 input[type='email']:focus,
@@ -412,8 +413,8 @@ a {
   }
 }
 /* About section */
-.about.section .cta {
-  width: 200px;
+.about.section button.cta {
+  min-width: 200px;
   height: 50px;
   font-size: 24px;
 }
@@ -455,7 +456,7 @@ a {
 }
 .prototype.section .col button {
   margin-left: 5%;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   font-size: 24px;
 }
@@ -593,6 +594,7 @@ a {
   width: 100%;
 }
 .modal button.close {
+  outline: none;
   width: 30px;
   position: absolute;
   right: 10px;
@@ -600,6 +602,7 @@ a {
   font-size: 30px;
   padding: 0;
   padding-bottom: 4px;
+  border: #660032 solid 2px;
 }
 .modal p {
   margin-right: 30px;
@@ -642,14 +645,14 @@ a {
     width: 90%;
   }
 }
-.modal > :last-child {
-  margin-bottom: 20px;
-}
 .modal .sketchfab-embed-wrapper {
   width: 100%;
 }
 .modal .sketchfab-embed-wrapper iframe {
   width: 100%;
+}
+.modal .spacer {
+  height: 30px;
 }
 .modal-overlay {
   background: black;

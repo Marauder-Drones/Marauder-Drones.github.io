@@ -169,6 +169,7 @@ textarea {
     transition: all .2s;
     display: block;
     margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
     &:focus {
         border: 2px solid @secondary;
     }
@@ -434,8 +435,8 @@ p,a {
 /* About section */
 
 .about.section {
-    .cta {
-        width: 200px;
+    button.cta {
+        min-width: 200px;
         height: 50px;
         font-size: 24px;
     }
@@ -475,7 +476,7 @@ p,a {
         }
         button {
             margin-left: 5%;
-            width: 200px;
+            min-width: 200px;
             height: 50px;
             font-size: 24px;
         }
@@ -632,7 +633,9 @@ p,a {
     bottom: 0;
     right: 0;
     width: 100%;
+    
     button.close {
+        outline: none;
         width: 30px;
         position: absolute;
         right: 10px;
@@ -640,6 +643,7 @@ p,a {
         font-size: 30px;
         padding: 0;
         padding-bottom: 4px;
+        border: @primary solid 2px;
     }
     p {
         margin-right: 30px;
@@ -672,14 +676,14 @@ p,a {
             width: 90%;
         }
     }
-    > :last-child {
-        margin-bottom: 20px;
-    }
     .sketchfab-embed-wrapper {
         width: 100%;
         iframe {
             width: 100%;
         }
+    }
+    .spacer {
+        height: 30px;
     }
 }
 
