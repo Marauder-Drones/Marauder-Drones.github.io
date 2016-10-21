@@ -13,7 +13,7 @@ $.onReady(function(){
     setTimeout(function(){
         $.style("#scrollPrompt", "opacity", "1");
     },5000);
-    window.addEventListener("scroll", function(){
+    document.body.addEventListener("scroll", function(){
         $.style("#scrollPrompt", "display", "none");
     });
     
