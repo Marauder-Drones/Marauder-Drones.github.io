@@ -72,9 +72,6 @@ h3.post {
   font-weight: 500;
   font-family: ApercuBold;
 }
-p {
-  font-size: 16px;
-}
 .anchor {
   position: absolute;
   top: -100px;
@@ -188,7 +185,7 @@ legend i {
 p,
 a {
   color: #000;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7em;
   margin-bottom: 20px;
 }
@@ -502,7 +499,7 @@ input[type="submit"]:hover,
   margin-bottom: 8px;
 }
 .team.section .row p {
-  font-size: 16px;
+  font-size: 17px;
   color: #575757;
 }
 .team.section .row img {
