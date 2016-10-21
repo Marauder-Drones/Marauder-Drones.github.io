@@ -93,7 +93,6 @@ label.checkbox {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
 }
 label.checkbox:hover {
   color: #fff;
@@ -252,7 +251,6 @@ input[type="submit"],
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: default;
 }
 button:hover,
 input[type="submit"]:hover,
