@@ -70,24 +70,6 @@ p {
   top: -100px;
   pointer-events: none;
 }
-button,
-input[type="submit"] {
-  background: #000;
-  color: #660032;
-  height: 30px;
-  font-size: 18px;
-  line-height: 0;
-  padding: 20px;
-  outline: solid 2px #660032;
-  cursor: pointer;
-  transition: all .3s;
-  -webkit-appearance: none;
-}
-button:hover,
-input[type="submit"]:hover {
-  color: #a0a0a0;
-  background: #660032;
-}
 label.checkbox {
   background: #000;
   color: #660032;
@@ -212,6 +194,31 @@ a {
   .section .header.right {
     right: 120px;
   }
+}
+button,
+input[type="submit"],
+.button {
+  background: #000;
+  color: #660032;
+  height: 30px;
+  font-size: 18px;
+  line-height: 0;
+  padding: 20px;
+  outline: solid 2px #660032;
+  cursor: pointer;
+  transition: all .3s;
+  -webkit-appearance: none;
+}
+button:hover,
+input[type="submit"]:hover,
+.button:hover {
+  color: #a0a0a0;
+  background: #660032;
+}
+.button {
+  padding-top: 7px;
+  padding-bottom: 9px;
+  text-decoration: none;
 }
 .row {
   width: 100%;

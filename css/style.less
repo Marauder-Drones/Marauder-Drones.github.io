@@ -107,24 +107,6 @@ p {
     pointer-events: none;
 }
 
-button,
-input[type="submit"] {
-    background: @background;
-    color: @primary;
-    height: 30px;
-    font-size: 18px;
-    line-height: 0;
-    padding: 20px;
-    outline: solid 2px @primary;
-    cursor: pointer;
-    transition: all .3s;
-    -webkit-appearance: none;
-    
-    &:hover {
-        color: @plain;
-        background: @primary;
-    }
-}
 
 label.checkbox {
     background: @background;
@@ -239,6 +221,32 @@ p,a {
             }
         }
     }
+}
+
+button,
+input[type="submit"],
+.button {
+    background: @background;
+    color: @primary;
+    height: 30px;
+    font-size: 18px;
+    line-height: 0;
+    padding: 20px;
+    outline: solid 2px @primary;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-appearance: none;
+    
+    &:hover {
+        color: @plain;
+        background: @primary;
+    }
+}
+
+.button {
+    padding-top: 7px;
+    padding-bottom: 9px;
+    text-decoration: none;
 }
 
 .row {
