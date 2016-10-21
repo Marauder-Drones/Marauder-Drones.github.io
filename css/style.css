@@ -537,9 +537,11 @@ input[type="submit"]:hover,
 .exec.section .row .col h3 {
   margin-top: 10px;
   font-size: 23px;
+  margin-bottom: 5px;
 }
 .exec.section .row .col p {
   color: #575757;
+  line-height: 22px;
 }
 /* Gallery section */
 .gallery.section {
