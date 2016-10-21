@@ -22,8 +22,8 @@ $.onReady(function(){
     function hideModal(){
         $.style(".modal", "opacity", "0");
         $.style(".modal-overlay", "opacity", "0");
-        $.style("html", "overflow", "auto");
         $.style("body", "overflow", "auto");
+        $.style("body", "height", "100%");
         setTimeout(function(){
             $.style(".modal", "display", "none");
             $.style(".modal-overlay", "display", "none");
@@ -33,8 +33,8 @@ $.onReady(function(){
     function showModal(modalID){
         $.style(modalID, "display", "inherit");
         $.style(".modal-overlay", "display", "inherit");
-        $.style("html", "overflow", "hidden");
         $.style("body", "overflow", "hidden");
+        $.style("body", "height", "0");
         setTimeout(function(){
             $.style(modalID, "opacity", "1");
             $.style(".modal-overlay", "opacity", "1");
