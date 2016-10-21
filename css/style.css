@@ -698,6 +698,11 @@ input[type="submit"]:hover,
 .modal .sketchfab-embed-wrapper {
   width: 90%;
 }
+@media only screen and (min-width : 480px) {
+  .modal .sketchfab-embed-wrapper {
+    width: 100%;
+  }
+}
 .modal .sketchfab-embed-wrapper iframe {
   width: 100%;
   max-height: 300px;
