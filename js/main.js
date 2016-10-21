@@ -70,15 +70,12 @@ $.onReady(function(){
         e.target.focus();
     });
 
-    $.event('body', 'touchstart', function(e) {
-        $.style('.scrollFix', "pointer-events","auto");
-    });
     $.event('body', 'touchmove', function(e) {
         $.style('.scrollFix', "pointer-events","none");
     });
     $.event('body', 'touchend', function(e) {
         setTimeout(function() {
-            $.style('.scrollFix', "pointer-events", "none");
+            $.style('.scrollFix', "pointer-events", "auto");
         },0);
     });
     
