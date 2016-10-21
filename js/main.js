@@ -50,11 +50,17 @@ $.onReady(function(){
         showModal("#ctamodal");
     });
     
+    var first3D = true;
     $.event(".open3d", "click", function(event){
+        if (first3D){
+            $(".modal .sketchfab-embed-wrapper").innerHTML = '<iframe width="640" height="480" src="https://sketchfab.com/models/41e1ea89a3414f94910264f0e3c868d1/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>';
+            first3D=false;
+        }
         showModal("#threemodal")
     });
     
     $.style(".intro > .header", "opacity", "1");
+    $.style(".drones", "display", "inherit");
     
     new WOW().init();
 });

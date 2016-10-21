@@ -319,6 +319,7 @@ p,a {
         transition: opacity 1s;
     }
     .drones {
+        display: none;
         position: absolute;
         left: 0;
         top: 0;
@@ -354,19 +355,19 @@ p,a {
                 left: 10%;
                 transform: translateY(-150px);
                 animation-duration: 3s;
-                animation-delay: .5s;
+                animation-delay: 1.5s;
                 @media @tablets {
                     transform: translateY(-280px);
                 }
                 img {
-                    animation-duration: 2.2s;
+                    animation-duration: 1.2s;
                 }
             }
             &.b {
                 left: 50%;
                 transform: translateY(230px);
                 animation-duration: 2.7s;
-                animation-delay: 1.2s;
+                animation-delay: 2.2s;
                 @media @phones {
                     transform: translateY(130px);
                 }
@@ -380,12 +381,13 @@ p,a {
                     transform: translateY(230px);
                 }
                 img {
-                    animation-duration: 1.8s;
+                    animation-duration: .8s;
                 }
             }
             &.c {
                 left: 85%;
                 animation-duration: 2.5s;
+                animation-delay: 0s;
                 display: none;
                 @media @tablets {
                     transform: translateY(-200px);

@@ -294,6 +294,7 @@ a {
   transition: opacity 1s;
 }
 .intro .drones {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -331,7 +332,7 @@ a {
   left: 10%;
   transform: translateY(-150px);
   animation-duration: 3s;
-  animation-delay: .5s;
+  animation-delay: 1.5s;
 }
 @media only screen and (min-width : 768px) {
   .intro .drones .drone-wrapper.a {
@@ -339,13 +340,13 @@ a {
   }
 }
 .intro .drones .drone-wrapper.a img {
-  animation-duration: 2.2s;
+  animation-duration: 1.2s;
 }
 .intro .drones .drone-wrapper.b {
   left: 50%;
   transform: translateY(230px);
   animation-duration: 2.7s;
-  animation-delay: 1.2s;
+  animation-delay: 2.2s;
 }
 @media only screen and (min-width : 480px) {
   .intro .drones .drone-wrapper.b {
@@ -368,11 +369,12 @@ a {
   }
 }
 .intro .drones .drone-wrapper.b img {
-  animation-duration: 1.8s;
+  animation-duration: .8s;
 }
 .intro .drones .drone-wrapper.c {
   left: 85%;
   animation-duration: 2.5s;
+  animation-delay: 0s;
   display: none;
 }
 @media only screen and (min-width : 768px) {
