@@ -94,12 +94,6 @@ input[type="submit"]:hover {
   color: #a0a0a0;
   background: #660032;
 }
-button:active,
-input[type="submit"]:active,
-button:focus,
-input[type="submit"]:focus {
-  outline: solid 2px #660032;
-}
 label.checkbox {
   background: #000;
   color: #660032;
