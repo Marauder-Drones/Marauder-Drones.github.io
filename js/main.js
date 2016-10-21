@@ -66,5 +66,20 @@ $.onReady(function(){
     $.style(".intro > .header", "opacity", "1");
     $.style(".drones", "display", "inherit");
     
+    
+    $.style('.scrollFix', "pointer-events","none");
+
+    $.event('body', 'touchstart', function(e) {
+        $.style('.scrollFix', "pointer-events","auto");
+    });
+    $.event('body', 'touchmove', function(e) {
+        $.style('.scrollFix', "pointer-events","none");
+    });
+    $.event('body', 'touchend', function(e) {
+        setTimeout(function() {
+            $.style('.scrollFix', "pointer-events", "none");
+        },0);
+    });
+    
     new WOW().init();
 });

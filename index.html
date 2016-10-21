@@ -194,14 +194,14 @@
         <p>Fill out this quick form and you'll be flying with the best of them!</p>
         
         <form method="post" action="https://formspree.io/themarauderdrones@gmail.com">
-            <input type="hidden" name="_subject" value="New Application to Drone Club!" />
-            <input type="hidden" name="_next" value="thanks.html" />
+            <input class="scrollFix" type="hidden" name="_subject" value="New Application to Drone Club!" />
+            <input class="scrollFix" type="hidden" name="_next" value="thanks.html" />
             <label for="first">First Name</label>
-            <input required type="text" id="first" placeholder="First Name" name="first" />
+            <input class="scrollFix" required type="text" id="first" placeholder="First Name" name="first" />
             <label for="last">Last Name</label>
-            <input required type="text" id="last" name="last" placeholder="Last Name" />
+            <input class="scrollFix" required type="text" id="last" name="last" placeholder="Last Name" />
             <label for="email">Email</label>
-            <input required type="email" id="email" name="_replyto" placeholder="Email" />
+            <input class="scrollFix" required type="email" id="email" name="_replyto" placeholder="Email" />
             <fieldset>
                 <legend>Preferred Teams</legend>
                 <label class="checkbox">
@@ -219,7 +219,7 @@
             </fieldset>
 
             <label for="bio">Past Experience <i>- Optional</i></label>
-            <textarea id="bio" name="user_bio" placeholder="Past experience."></textarea>
+            <textarea class="scrollFix" id="bio" name="user_bio" placeholder="Past experience."></textarea>
             <input type="submit" value="Sign Up" />
         </form>
         <div class="spacer"></div>
