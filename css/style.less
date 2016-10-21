@@ -1,9 +1,22 @@
 /* General Styles */
 
 @primary: ~"#660032";
-@plain: ~"#a0a0a0";
+@plain: ~"#000";
 @secondary: ~"#575757";
-@background: ~"#000";
+@background: ~"#fff";
+
+/* Font */
+
+@font-face {
+    font-family: ApercuBold ;
+    src: url(apercuBold.woff2);
+}
+
+@font-face {
+    font-family: ApercuLight;
+    src: url(apercuLight.woff2);
+}
+
 
 /* Custom scrollbars */
 
@@ -53,13 +66,13 @@
 html,
 body {
     background: @background;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'ApercuLight';
     width: 100%;
     overflow-x: hidden;
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'ApercuBold';
     font-size: 58px;
     font-weight: 300;
     color: @primary;
@@ -91,6 +104,7 @@ h3.post {
     color: @primary;
     border-bottom: solid @primary 1px;
     font-weight: 500;
+    font-family: ApercuBold;
 }
 
 h4 {}
@@ -98,7 +112,7 @@ h4 {}
 h5 {}
 
 p {
-    font-weight: 300;
+    font-size: 16px;
 }
 
 .anchor {
@@ -119,7 +133,7 @@ label.checkbox {
     text-align: center;
     cursor: pointer;
     &:hover {
-        color: @plain;
+        color: @background;
         background: @primary;
     }
     div {
@@ -129,9 +143,9 @@ label.checkbox {
         transition: all .2s;
     }
     input[type="checkbox"]:checked ~ div {
-        color: @primary;
-        background: @plain;
-        outline: solid 2px @primary;
+        color: @background;
+        background: @primary;
+        outline: solid 2px @background;
     }
     input[type="checkbox"] {
         display: none;
@@ -141,8 +155,8 @@ label.checkbox {
 input[type='text'],
 input[type='email'],
 textarea {
-    background: @background;
-    border: 2px solid @primary;
+    background: #efefef;
+    border-bottom: 2px solid @primary;
     color: @plain;
     font-size: 16px;
     padding: 10px;
@@ -150,9 +164,7 @@ textarea {
     display: block;
     margin-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
-    &:focus {
-        border: 2px solid @secondary;
-    }
+    
     &::-webkit-input-placeholder {
         color: @secondary;
     }
@@ -166,6 +178,27 @@ textarea {
         /* Internet Explorer 10-11 */
         color: @secondary;
     }
+    
+    &:focus::-webkit-input-placeholder {
+        color: @primary;
+    }
+    &:focus:-moz-placeholder {
+        color: @primary;
+    }
+    &:focus::-moz-placeholder {
+        color: @primary;
+    }
+    &:focus:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: @primary;
+    }
+    
+    &:focus {
+        border-bottom: 2px solid @secondary;
+        background: @primary;
+        color: @background;
+    }
+
 }
 
 fieldset {
@@ -232,13 +265,14 @@ input[type="submit"],
     font-size: 18px;
     line-height: 0;
     padding: 20px;
-    outline: solid 2px @primary;
+    outline: solid 1px @primary;
     cursor: pointer;
     transition: all .3s;
     -webkit-appearance: none;
+    font-family: ApercuLight;
     
     &:hover {
-        color: @plain;
+        color: @background;
         background: @primary;
     }
 }
