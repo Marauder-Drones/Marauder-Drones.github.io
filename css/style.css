@@ -615,17 +615,21 @@ a {
 }
 .modal button.close {
   outline: none;
-  width: 30px;
+  width: 50px;
+  height: 50px;
   position: fixed;
   right: 10px;
   top: 10px;
-  font-size: 30px;
+  font-size: 50px;
   padding: 0;
   padding-bottom: 4px;
   border: #660032 solid 2px;
 }
 @media only screen and (min-width : 768px) {
   .modal button.close {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
     position: absolute;
   }
 }
