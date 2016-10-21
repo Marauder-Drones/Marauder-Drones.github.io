@@ -192,6 +192,8 @@ fieldset {
     margin-bottom: 25px;
 }
 
+
+
 label,
 legend {
     color: @plain;
@@ -245,9 +247,19 @@ p,a {
     width: 100%;
     position: relative;
     
+    &.flip-mobile {
+        display: flex;
+        -webkit-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+    }
+    
     @media @tablets {
         display: flex;
+        -webkit-flex-flow: row !important;
+        flex-flow: row !important;
     }
+    
+
 }
 
 

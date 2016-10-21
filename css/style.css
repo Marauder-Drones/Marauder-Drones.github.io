@@ -222,9 +222,16 @@ a {
   width: 100%;
   position: relative;
 }
+.row.flip-mobile {
+  display: flex;
+  -webkit-flex-flow: column-reverse;
+  flex-flow: column-reverse;
+}
 @media only screen and (min-width : 768px) {
   .row {
     display: flex;
+    -webkit-flex-flow: row !important;
+    flex-flow: row !important;
   }
 }
 .col {
