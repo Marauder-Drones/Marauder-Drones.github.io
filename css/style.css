@@ -639,6 +639,12 @@ a {
 }
 .modal label.checkbox {
   max-width: 26%;
+  font-size: 14px;
+}
+@media only screen and (min-width : 480px) {
+  .modal label.checkbox {
+    font-size: 16px;
+  }
 }
 .modal input[type="text"],
 .modal input[type="email"],
