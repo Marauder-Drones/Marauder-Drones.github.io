@@ -66,6 +66,9 @@ $.onReady(function(){
     $.style(".intro > .header", "opacity", "1");
     $.style(".drones", "display", "inherit");
     
+    $.event('.scrollFix', 'click', function(e) {
+        e.target.focus();
+    });
 
     $.event('body', 'touchstart', function(e) {
         $.style('.scrollFix', "pointer-events","auto");
