@@ -647,6 +647,7 @@ a {
   padding: 0;
   padding-bottom: 4px;
   border: #660032 solid 2px;
+  z-index: 99999999;
 }
 @media only screen and (min-width : 768px) {
   .modal button.close {
