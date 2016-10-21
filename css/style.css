@@ -662,7 +662,7 @@ input[type="submit"]:hover,
   }
 }
 .modal .sketchfab-embed-wrapper {
-  width: 100%;
+  width: 90%;
 }
 .modal .sketchfab-embed-wrapper iframe {
   width: 100%;
