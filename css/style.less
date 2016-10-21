@@ -1,0 +1,694 @@
+/* General Styles */
+
+@primary: ~"#660032";
+@plain: ~"#a0a0a0";
+@secondary: ~"#575757";
+@background: ~"#000";
+
+/* Custom scrollbars */
+
+::-webkit-scrollbar {
+    background-color: @background;
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button {}
+
+::-webkit-scrollbar-track {
+    background-color: @background;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: @background;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: @secondary;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: @background;
+}
+
+
+/* Media queries */
+
+
+/* Extra Small Devices, Phones */
+
+@phones: ~"only screen and (min-width : 480px)";
+
+/* Small Devices, Tablets */
+
+@tablets: ~"only screen and (min-width : 768px)";
+
+/* Medium Devices, Desktops */
+
+@desktops: ~"only screen and (min-width : 992px)";
+
+/* Large Devices, Wide Screens */
+
+@monitors: ~"only screen and (min-width : 1400px)";
+html,
+body {
+    background: @background;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 58px;
+    font-weight: 300;
+    color: @primary;
+    @media @tablets {
+        font-size: 80px;
+    }
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 25px;
+    color: @secondary;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 30px;
+    color: @plain;
+}
+
+h3.pre {
+    color: @secondary;
+    margin-bottom: 6px;
+    font-size: 24px;
+}
+
+h3.post {
+    padding-bottom: 2px;
+    color: @primary;
+    border-bottom: solid @primary 1px;
+    font-weight: 500;
+}
+
+h4 {}
+
+h5 {}
+
+p {
+    font-weight: 300;
+}
+
+.anchor {
+    position: absolute;
+    top: -100px;
+    pointer-events: none;
+}
+
+button,
+input[type="submit"] {
+    background: @background;
+    color: @primary;
+    height: 30px;
+    font-size: 18px;
+    line-height: 0;
+    padding: 20px;
+    outline: solid 2px @primary;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        color: @plain;
+        background: @primary;
+    }
+    &:active,
+    &:focus {
+        outline: solid 2px @primary;
+    }
+}
+
+label.checkbox {
+    background: @background;
+    color: @primary;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        color: @plain;
+        background: @primary;
+    }
+    div {
+        width: 100%;
+        height: 100%;
+        outline: solid 2px @primary;
+        transition: all .2s;
+    }
+    input[type="checkbox"]:checked ~ div {
+        color: @primary;
+        background: @plain;
+        outline: solid 2px @primary;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+    background: @background;
+    border: 2px solid @primary;
+    color: @plain;
+    font-size: 16px;
+    padding: 10px;
+    transition: all .2s;
+    display: block;
+    margin-bottom: 20px;
+    &:focus {
+        border: 2px solid @secondary;
+    }
+    &::-webkit-input-placeholder {
+        color: @secondary;
+    }
+    &:-moz-placeholder {
+        color: @secondary;
+    }
+    &::-moz-placeholder {
+        color: @secondary;
+    }
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: @secondary;
+    }
+}
+
+fieldset {
+    margin-bottom: 25px;
+}
+
+label,
+legend {
+    color: @plain;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    i {
+        color: @secondary;
+    }
+}
+
+p,a {
+    color: @plain;
+    font-size: 18px;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+}
+
+.section {
+    padding: 30px;
+    padding-top: 120px;
+    position: relative;
+    margin-bottom: 50px;
+    @media @tablets {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .header {
+        position: absolute;
+        top: 0;
+        &.left {
+            text-align: left;
+            left: 30px;
+            right: 0;
+            @media @tablets {
+                left: 120px;
+            }
+        }
+        &.right {
+            text-align: right;
+            right: 30px;
+            left: 0;
+            @media @tablets {
+                right: 120px;
+            }
+        }
+    }
+}
+
+.row {
+    width: 100%;
+    position: relative;
+    
+    @media @tablets {
+        display: flex;
+    }
+}
+
+
+.col {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1000;
+    background: #18181a;
+    background: -webkit-linear-gradient(#000, transparent);
+    background: linear-gradient(#000, transparent);
+    pointer-events: none;
+    .nav {
+        color: @secondary;
+        display: inline-block;
+        float: right;
+        font-size: 18px;
+        margin: 20px 45px;
+        cursor: pointer;
+        transition: color .2s linear;
+        pointer-events: all;
+        &:hover {
+            color: @plain;
+        }
+    }
+}
+
+
+/* Intro section */
+
+.intro {
+    text-align: center;
+    width: 100%;
+    padding-top: 200px;
+    position: relative;
+    height: 400px;
+    @media @tablets {
+        height: 600px;
+    }
+    @media @tablets {
+        padding-top: 300px;
+    }
+    .header {
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 3s;
+    }
+    #scrollPrompt {
+        position: fixed;
+        bottom: 20px;
+        color: @secondary;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background: black;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .drones {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        .drone-wrapper {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            bottom: -50%;
+            animation-name: movea;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            animation-play-state: running;
+            animation-fill-mode: forwards;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                animation-name: float;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+                animation-play-state: running;
+                pointer-events: none;
+                cursor: pointer;
+            }
+            &.a {
+                left: 10%;
+                transform: translateY(-150px);
+                animation-duration: 3s;
+                animation-delay: .5s;
+                @media @tablets {
+                    transform: translateY(-280px);
+                }
+                img {
+                    animation-duration: 2.2s;
+                }
+            }
+            &.b {
+                left: 50%;
+                transform: translateY(230px);
+                animation-duration: 2.7s;
+                animation-delay: 1.2s;
+                @media @phones {
+                    transform: translateY(130px);
+                }
+                @media @tablets {
+                    transform: translateY(150px);
+                }
+                @media @desktops {
+                    transform: translateY(180px);
+                }
+                @media @monitors {
+                    transform: translateY(230px);
+                }
+                img {
+                    animation-duration: 1.8s;
+                }
+            }
+            &.c {
+                left: 85%;
+                animation-duration: 2.5s;
+                display: none;
+                @media @tablets {
+                    transform: translateY(-200px);
+                    display: inherit;
+                }
+                @media only screen and (min-width: 1060px) {
+                    transform: translateY(-100px);
+                }
+                img {
+                    animation-duration: 2s;
+                }
+            }
+        }
+    }
+}
+
+
+/* Drone keyframes */
+
+@keyframes float {
+    0% {
+        transform: translateY(8px) rotate3d(0, 0, 1, 3deg);
+    }
+    33% {
+        transform: translateY(-4px) rotate3d(0, 0, 1, 0deg);
+    }
+    66% {
+        transform: translateY(3px) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+        transform: translateY(6px) rotate3d(0, 0, 1, 0deg);
+    }
+}
+
+@keyframes movea {
+    from {}
+    to {
+        bottom: 50%;
+    }
+}
+
+
+/* About section */
+
+.about.section {
+    .cta {
+        width: 200px;
+        height: 50px;
+        font-size: 24px;
+    }
+    .col {
+        text-align: center;
+        @media @tablets {
+            text-align: left;
+        }
+        p {
+            width: 95%;
+            margin-right: 5%;
+            text-align: left;
+        }
+        img {
+            width: 100%;
+            @media @tablets {
+                width: 95%;
+                margin-left: 5%;
+            }
+        }
+    }
+}
+
+
+/* Prototype section */
+
+.prototype.section {
+    .col {
+        text-align: center;
+        @media @tablets {
+            text-align: left;
+        }
+        p {
+            width: 95%;
+            margin-left: 5%;
+            text-align: left;
+        }
+        button {
+            margin-left: 5%;
+            width: 200px;
+            height: 50px;
+            font-size: 24px;
+        }
+        img {
+            width: 100%;
+            @media @tablets {
+                width: 95%;
+                margin-right: 5%;
+            }
+        }
+
+    }
+}
+
+
+/* Team section */
+
+.team.section {
+    
+    .row {
+        .col {
+            padding: 0;
+            margin-bottom: 20px;
+            @media @tablets {
+                padding: 0 30px;
+            }
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 16px;
+            color: @secondary;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+/* Exec section */
+
+.exec.section {
+    
+    .row {
+        .col {
+            padding: 0;
+            text-align: center;
+            display: inline-block;
+            
+            @media @phones{
+                width: 49%;
+            }
+            
+            
+            @media @tablets {
+                padding: 0 25px;
+                width: 100%;
+            }
+            img {
+                width: 60%;
+                
+                @media @tablets {
+                    width: 100%;
+                }
+            }
+            h3 {
+                margin-top: 10px;
+                font-size: 23px;
+            }
+            p {
+                color: @secondary;
+            }
+        }
+    }
+}
+
+
+/* Gallery section */
+
+.gallery.section {
+    height: auto;
+    margin-bottom: 10px;
+    
+    .gallery {
+        /* Prevent vertical gaps */
+        line-height: 0;
+        -webkit-column-gap: 0px;
+        -moz-column-gap: 0px;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+        column-gap: 0px;
+        
+        img {
+            /* Just in case there are inline attributes */
+            width: 100% !important;
+            height: auto !important;
+            display: inline-block;
+        }
+        @media @phones {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+        @media @tablets {
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            column-count: 3;
+        }
+    }
+}
+
+
+/* Footer section */
+.footer {
+    margin: 0 30px 20px 30px;
+    
+    span, span a {
+        color: @secondary !important;
+        font-size: 12px;
+        
+        
+        
+        &.copy {
+            float: left;
+        }
+        
+        &.creator {
+            float: right;
+        }
+    }
+}
+
+/* Modal */
+
+.cta {
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    background: @background;
+    outline: @primary 3px solid;
+    z-index: 9999999;
+    display: none;
+    opacity: 0;
+    transition: all .5s;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    button.close {
+        width: 30px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 30px;
+        padding: 0;
+        padding-bottom: 4px;
+    }
+    p {
+        margin-right: 30px;
+        color: @secondary;
+    }
+    .modal-content {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        @media @tablets {
+            right: 40px;
+        }
+    }
+    @media @tablets {
+        top: 8%;
+        left: 20%;
+        width: 60%;
+    }
+    @media @monitors {
+        bottom: auto;
+    }
+    label.checkbox {
+        max-width: 26%;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 75%;
+        @media @tablets {
+            width: 90%;
+        }
+    }
+    > :last-child {
+        margin-bottom: 20px;
+    }
+    .sketchfab-embed-wrapper {
+        width: 100%;
+        iframe {
+            width: 100%;
+        }
+    }
+}
+
+.modal-overlay {
+    background: black;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999998;
+}

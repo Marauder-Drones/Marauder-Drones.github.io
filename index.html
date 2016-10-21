@@ -1,14 +1,17 @@
-<!DOCTYPE HTML>
-
-<!---Designed by Thomas Mullen (Rational Coding Development 2015)-->
-
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <title>Marauder Drones</title>
-    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico?">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name='viewport' content="width=device-width, minimum-scale=1, initial-scale=1" />
     <meta name="description" content="The largest and most active club for drone enthusiasts at McMaster university." />
     <meta name="keywords" content="Marauder,Marader,Maruder,McMaster,Drone,Club,Hamilton" />
+
+    <!--OpenGraph-->
     <meta property="og:site_name" content="Marauder Drone Club" />
     <meta property="og:url" content="http://marauderdrones.com/" />
     <meta property="og:title" content="Home" />
@@ -16,187 +19,227 @@
     <meta property="og:image" content="http://marauderdrones.com/images/logo_stretched.jpg" />
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" href="./favicon.ico?">
 
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <link rel="logo_stretched.jpg" type="image/jpeg" href="http://marauderdrones.com/images/" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css" />
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="homepage">
-    <div id="page-wrapper">
-
-        <!-- Header -->
-        <div id="header-wrapper">
-            <div id="header">
-
-                <!-- Logo -->
-                <h1 style="margin-bottom: 0.75em;">
-					<a href="index.html">Marauder Drones</a>
-				</h1>
-
-                <!-- Banner -->
-                <section id="banner">
-                    <header>
-                        <h2>If It Exists... We Can Drone It!</h2>
-                    </header>
-                </section>
-
-                <!-- Intro -->
-                <section id="intro" class="container">
-                    <div class="row">
-                        <div class="4u 12u(mobile)">
-                            <section class="first">
-                                <a href="https://www.facebook.com/groups/1412872015705098/" target="_blank" title="Design Facebook Page">
-                                    <img class="round-button" src="images/design.png" width="150em" height="150em"></img>
-
-                                    <header>
-                                        <h2>Design</h2>
-                                    </header>
-                                    <p style="font-size:1.5em; line-height:1.8em;">The design team
-                                        <br/>optimizes a sleek look
-                                        <br/>via simulation.</p>
-                                </a>
-                            </section>
-                        </div>
-                        <div class="4u 12u(mobile)">
-                            <section class="middle">
-                                <a href="https://www.facebook.com/groups/1060270197334994/" target="_blank" title="Build Facebook Page">
-                                    <img class="round-button" src="images/build.png" width="150em" height="150em"></img>
-
-                                    <header>
-                                        <h2>Build</h2>
-                                    </header>
-                                    <p style="font-size:1.5em; line-height:1.8em;">The electrical and mechanical teams turn models into a real-life prototype.</p>
-                                </a>
-                            </section>
-                        </div>
-                        <div class="4u 12u(mobile)">
-                            <section class="last">
-                                <a target="_blank" href="https://www.facebook.com/groups/1645819495653331/" title="Software Facebook Page">
-                                    <img class="round-button" src="images/code.png" width="150em" height="150em"></img>
-
-                                    <header>
-                                        <h2>Program</h2>
-                                    </header>
-                                    <p style="font-size:1.5em; line-height:1.8em;">The software team provides fine-tuned
-                                        <br/>flight control.</p>
-                                </a>
-                            </section>
-                        </div>
-                    </div>
-                    <footer>
-                        <ul class="actions">
-                            <li><a href="signup.html" class="button big four" style="background-color:#660032;" title="Sign Up Page">Sign Up!</a></li>
-                            <li><a href="meet.html" class="button alt big four" title="Club Photos">Meet The Club!</a></li>
-                            <li><a href="contact.html" class="button big four" style="background-color:#660032;" title="Contact Page">Contact Us!</a></li>
-                            <li><a href="resources.html" class="button alt big four" title="Resource Page">Resources<span style="color:red; font-size:.5em; vertical-align:middle"> NEW</span></a></li>
-                        </ul>
-                        <ul class="social">
-                            <li>
-                                <a class="icon fa-facebook" target="_blank" href="https://www.facebook.com/groups/450184508440088/" title="General Facebook Page">
-                                    <span class="label">Facebook</span>
-                                </a>
-                            </li>
-                            <!--
-										<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-										<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-										<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
-										<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
-									-->
-                            <a href="cal.html" title="Calendar">
-                                <img style="width:2.98em; height:2.98em; vertical-align:-0.75em;" src="images/cal.png" </img>
-                            </a>
-                        </ul>
-
-                    </footer>
-                </section>
-
-            </div>
+<body>
+    <ul class="navbar">
+        <li class="nav cta">
+            Build A Drone
+        </li>
+    </ul>
+    <div class="intro">
+        <div class="drones">
+            <a href="#gallery" class="drone-wrapper a">
+                <img src="img/drone0.png" />
+            </a>
+            <a href="#" class="cta drone-wrapper b">
+                <img src="img/drone1.png" />
+            </a>
+            <a href="#" class="open3d drone-wrapper c">
+                <img src="img/drone2.png" />
+            </a>
         </div>
 
-        <!--Video-->
-        <center>
-            <br/>
-            <h2 style="color:white">Drone footage is just one of the endless applications of this technology.</h2>
-            <h4 style="color:gray">Click the video to toggle sound.</h3>
-				<br/>
-				<video autoplay muted loop id="bgvid" width="70%">
-					<source src="images/video.mp4" type="video/mp4"> Your browser does not support the video tag.
-				</video>
+        <div class="header">
+            <h1 style="text-transform:uppercase">Marauder Drones</h1>
+            <h2>McMaster's Aerial Innovators</h2>
+        </div>
+
+        <div id="scrollPrompt">
+            <span>Scroll Down</span>
+        </div>
+    </div>
+    <div class="about section">
+        <div class="header left wow slideInRight" data-wow-duration="2.3s">
+            <h3 class="pre">Introduction</h3>
+            <h3 class="post">WELCOME TO THE CLUB</h3>
+        </div>
+        <div class="row md">
+            <div class="col">
+                <p>The Marauder Drone Club is a team of McMaster University students who are passionate about designing and constructing quadrotor aircraft.</p>
+                <p>Members conduct research into new technology and work together to build drone prototypes.</p>
+                <p>No technical experience is required to join, and students from all faculties are welcome to contribute!</p>
+                <button class="cta">Join Today!</button>
+            </div>
+            <div class="col">
+                <img src="img/working1.png">
+            </div>
+        </div>
+    </div>
+    <div class="prototype section">
+        <div class="header right wow slideInLeft" data-wow-duration="2.3s">
+            <h3 class="pre">The Prototype</h3>
+            <h3 class="post">OUR QUADCOPTER</h3>
+        </div>
+        <div class="row md">
+            <div class="col">
+                <img src="img/model.png">
+            </div>
+            <div class="col">
+                <p>This is the digital model of our innovative new drone design. We are still in the process of creating a working prototype, but we are almost there!</p>
+                <p>The drone features self-leveling flight, an Arduino Mega microcomputer, and reliable remote control.</p>
+                <button class="open3d">View 3D Model</button>
+            </div>
+        </div>
+    </div>
+    <div class="team section">
+        <div class="header left wow slideInRight" data-wow-duration="2.3s">
+            <h3 class="pre">The Teams</h3>
+            <h3 class="post">DIVIDE AND CONQUER</h3>
+        </div>
+        <div class="row md">
+            <div class="col col-3">
+                <img src="img/teams/design.jpg">
+                <h3>Design Team</h3>
+                <p>The design team uses advanced simulation tools to optimize the design.</p>
+            </div>
+            <div class="col col-3">
+                <img src="img/teams/build.jpg">
+                <h3>Build Team</h3>
+                <p>The build team transforms the design into a real-life prototype.</p>
+            </div>
+            <div class="col col-3">
+                <img src="img/teams/software.jpg">
+                <h3>Software Team</h3>
+                <p>The software team provides fine-tuned analytics and flight-control.</p>
+            </div>
+        </div>
+    </div>
+        
+    <div class="exec section">
+        <div class="header right wow slideInLeft" data-wow-duration="2.3s">
+            <h3 class="pre">The Executives</h3>
+            <h3 class="post">MEET OUR LEADS</h3>
+        </div>
+        <div class="row sm">
+            <div class="col">
+                <img src="img/profiles/andres.png">
+                <h3>Andres Hurtado</h3>
+                <p>President</p>
+            </div>
+            <div class="col">
+                <img src="img/profiles/wajih.png">
+                <h3>Wajih Khawaja</h3>
+                <p>Vice President</p>
+            </div>
+            <div class="col">
+                <img src="img/profiles/gustavo.png">
+                <h3>Gustavo Ponce</h3>
+                <p>Design Team Leader</p>
+            </div>
+            <div class="col">
+                <img src="img/profiles/nik.png">
+                <h3>Nik Novak</h3>
+                <p>Software Team Leader</p>
+            </div>
+        </div>
+        <div class="row sm">
+            <div class="col">
+                <img src="img/profiles/thomas.png">
+                <h3>Thomas Mullen</h3>
+                <p>Digital Content Manager</p>
+            </div>
+            <div class="col">
+                <img src="img/profiles/haden.png">
+                <h3>Haden Lee</h3>
+                <p>Public Relations Manager</p>
+            </div>
+            <div class="cta col">
+                <img src="img/profiles/placeholder.png">
+                <h3>You?</h3>
+                <p>Join Today!</p>
+            </div>
+            <div class="col"></div>
+        </div>
+
+    </div>
+    <div class="gallery section">
+        <div id="gallery" class="anchor"></div>
+        <div class="header left wow slideInRight" data-wow-duration="2.3s">
+            <h3 class="pre">The Gallery</h3>
+            <h3 class="post">OUR PROUDEST MOMENTS</h3>
+        </div>
+        <div class="gallery">
+            <img src="img/gallery/g1.jpg">
+            <img src="img/gallery/g2.jpg">
+            <img src="img/gallery/g3.jpg">
+            <img src="img/gallery/working1.jpg">
+            <img src="img/gallery/g4.jpg">
+            <img src="img/gallery/g5.jpg">
+            <img src="img/gallery/working2.jpg">
+
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="copyright">&copy; The Marauder Drone Club 2016</span>
+        <span class="creator"><a href="https://rationalcoding.me">By Thomas Mullen</a></span>
+    </div>
 
 
-				<script>
-					var video = document.getElementById("bgvid");
+    <div id="ctamodal" class="modal">
+        <button class="close">&#215;</button>
+        <div class="modal-content">
+        <h3>Join The Club</h3>
+        <p>Fill out this quick form and you'll be flying with the best of them!</p>
+        
+        <form method="post" action="http://formspree.io/themarauderdrones@gmail.com">
+            <input type="hidden" name="_subject" value="New Application to Drone Club!" />
+            <input type="hidden" name="_next" value="thanks.html" />
+            <label for="first">First Name</label>
+            <input required type="text" id="first" placeholder="First Name" name="first" />
+            <label for="last">Last Name</label>
+            <input required type="text" id="last" name="last" placeholder="Last Name" />
+            <label for="email">Email</label>
+            <input required type="email" id="email" name="_replyto" placeholder="Email" />
+            <fieldset>
+                <legend>Preferred Teams</legend>
+                <label class="checkbox">
+                    <input type="checkbox" name="team" value="design">
+                    <div>Design</div>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" name="team" value="build">
+                    <div>Build</div>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" name="team" value="software">
+                    <div>Software</div>
+                </label>
+            </fieldset>
 
-					video.addEventListener("click", function() {
-						if (video.muted) {
-							video.muted = false;
-						} else {
-							video.muted = true;
-						}
-					}, false);
-				</script>
-		</center>
-
-		<br/>
-		<br/>
-
-
-		<div id="main-wrapper">
-		</div>
-
-
-		<!-- Footer -->
-		<div id="footer-wrapper">
-			<section id="footer" class="container">
-				<div class="row">
-					<div class="8u 12u(mobile)">
-<!--BEGINCAL-->
-<section>
-<header>
-<h2 style="font-size:3em; text-align:left; margin-bottom:1em;">Upcoming Events</h2>
-</header>
-<ul class="dates">
-<!--This is a calender item!-->
-<li><span class="date"> <strong> </strong></span><h3><a>Meetings will resume after exams.</a></h3><p>Stay tuned for announcements!
-</p>
-</li>
-</ul>
-</section>
-<!--ENDCAL-->
-					</div>
-				</div>
-				<div class="row">
-					<div class="12u" style="padding: 0;">
-
-						<!-- Copyright -->
-						<div id="copyright">
-							<ul class="links">
-								<li>&copy; Marauder Drones. All rights reserved.</li>
-								<li>Design: <a title="Rational Coding Development" target="_blank" href="https://rationalcoding.github.io">Thomas Mullen</a></li>
-								<li>Domain: <a>John Spurr</a></li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
-			</section>
-		</div>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/skel-viewport.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>
-
+            <label for="bio">Past Experience <i>- Optional</i></label>
+            <textarea id="bio" name="user_bio" placeholder="Past experience."></textarea>
+            <input type="submit" value="Sign Up" />
+        </form>
+        </div>
+    </div>
+    <div id="threemodal" class="modal">
+        <button class="close">&#215;</button>
+        <div class="modal-content">
+        <h3>3D Model</h3>
+        <p>Explore a 3D modal of our prototype.</p>
+        
+        <div class="sketchfab-embed-wrapper">
+            <iframe width="640" height="480" src="https://sketchfab.com/models/41e1ea89a3414f94910264f0e3c868d1/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+        </div>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
 </body>
+<script src="js/wow.min.js"></script>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<script src="js/shortDOM.js"></script>
+<script src="js/main.js"></script>
 
 </html>
