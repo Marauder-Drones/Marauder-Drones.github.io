@@ -191,10 +191,11 @@
         <form method="post" action="https://formspree.io/themarauderdrones@gmail.com">
             <input class="scrollFix" type="hidden" name="_subject" value="New Application to Drone Club!" />
             <input class="scrollFix" type="hidden" name="_next" value="thanks.html" />
-            <label for="first">First Name</label>
-            <input class="scrollFix" required type="text" id="first" placeholder="First Name" name="first" />
-            <label for="last">Last Name</label>
-            <input class="scrollFix" required type="text" id="last" name="last" placeholder="Last Name" />
+            <fieldset class="half">
+                <legend>Name</legend>
+                <input class="scrollFix half" required type="text" id="first" placeholder="First Name" name="first" />
+                <input class="scrollFix half" required type="text" id="last" name="last" placeholder="Last Name" />
+            </fieldset>
             <label for="email">Email</label>
             <input class="scrollFix" required type="email" id="email" name="_replyto" placeholder="Email" />
             <fieldset>
