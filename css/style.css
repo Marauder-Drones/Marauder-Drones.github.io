@@ -710,10 +710,14 @@ input[type="submit"]:hover,
 .modal input[type="text"],
 .modal input[type="email"],
 .modal textarea {
-  width: 85%;
+  width: 75%;
 }
-.modal input {
-  max-width: 300px;
+@media only screen and (min-width : 768px) {
+  .modal input[type="text"],
+  .modal input[type="email"],
+  .modal textarea {
+    width: 90%;
+  }
 }
 .modal .sketchfab-embed-wrapper {
   width: 90%;
