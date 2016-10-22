@@ -8,7 +8,7 @@
 /* Font */
 
 @font-face {
-    font-family: ApercuBold ;
+    font-family: ApercuBold;
     src: url(apercuBold.woff2);
 }
 
@@ -111,13 +111,11 @@ h4 {}
 
 h5 {}
 
-
 .anchor {
     position: absolute;
     top: -100px;
     pointer-events: none;
 }
-
 
 label.checkbox {
     background: @background;
@@ -129,14 +127,12 @@ label.checkbox {
     width: 110px;
     text-align: center;
     cursor: pointer;
-    
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    
     &:hover {
         color: @background;
         background: @primary;
@@ -169,7 +165,6 @@ textarea {
     display: block;
     margin-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
-    
     &::-webkit-input-placeholder {
         color: @secondary;
     }
@@ -183,7 +178,6 @@ textarea {
         /* Internet Explorer 10-11 */
         color: @secondary;
     }
-    
     &:focus::-webkit-input-placeholder {
         color: @primary;
     }
@@ -197,20 +191,16 @@ textarea {
         /* Internet Explorer 10-11 */
         color: @primary;
     }
-    
     &:focus {
         border-bottom: 2px solid @secondary;
         background: @primary;
         color: @background;
     }
-
 }
 
 fieldset {
     margin-bottom: 25px;
 }
-
-
 
 label,
 legend {
@@ -223,7 +213,8 @@ legend {
     }
 }
 
-p,a {
+p,
+a {
     color: @plain;
     font-size: 20px;
     line-height: 1.7em;
@@ -247,10 +238,7 @@ p,a {
             left: 30px;
             right: 0;
             @media @tablets {
-                left: 120px;
-            }
-            @media @monitors {
-                left: 10%;
+                left: 80px;
             }
         }
         &.right {
@@ -258,18 +246,9 @@ p,a {
             right: 30px;
             left: 0;
             @media @tablets {
-                right: 120px;
-            }
-            @media @monitors {
-                right: 10%;
+                right: 80px;
             }
         }
-    }
-    
-    .row {
-        padding-left: 10%;
-        width: 80%;
-        padding-right: 10%;
     }
 }
 
@@ -287,13 +266,11 @@ input[type="submit"],
     transition: all .3s;
     -webkit-appearance: none;
     font-family: ApercuLight;
-    
     &:hover {
         color: @primary;
         background: @background;
         outline: solid 1px @primary;
     }
-    
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -311,22 +288,17 @@ input[type="submit"],
 .row {
     width: 100%;
     position: relative;
-    
     &.flip-mobile {
         display: flex;
         -webkit-flex-flow: column-reverse;
         flex-flow: column-reverse;
     }
-    
     @media @tablets {
         display: flex;
         -webkit-flex-flow: row !important;
         flex-flow: row !important;
     }
-    
-
 }
-
 
 .col {
     width: 100%;
@@ -387,7 +359,6 @@ input[type="submit"],
             animation-play-state: running;
             animation-fill-mode: forwards;
             cursor: pointer;
-            
             img {
                 width: 100%;
                 height: 100%;
@@ -534,7 +505,6 @@ input[type="submit"],
                 margin-right: 5%;
             }
         }
-
     }
 }
 
@@ -542,11 +512,9 @@ input[type="submit"],
 /* Team section */
 
 .team.section {
-    
     .row {
         padding: 0;
         width: 100%;
-        
         .col {
             padding: 0;
             margin-bottom: 20px;
@@ -572,21 +540,16 @@ input[type="submit"],
 /* Exec section */
 
 .exec.section {
-    
     .row {
         padding: 0;
         width: 100%;
-        
         .col {
             padding: 0;
             text-align: center;
             display: inline-block;
-            
-            @media @phones{
+            @media @phones {
                 width: 49%;
             }
-            
-            
             @media @tablets {
                 padding: 0 25px;
                 width: 100%;
@@ -594,7 +557,6 @@ input[type="submit"],
             img {
                 width: 60%;
                 max-width: 400px;
-                
                 @media @tablets {
                     width: 100%;
                 }
@@ -618,7 +580,6 @@ input[type="submit"],
 .gallery.section {
     height: auto;
     margin-bottom: 10px;
-    
     .gallery {
         /* Prevent vertical gaps */
         line-height: 0;
@@ -628,13 +589,11 @@ input[type="submit"],
         -webkit-column-count: 1;
         column-count: 1;
         column-gap: 0px;
-        
         @media @monitors {
             width: 80%;
             padding-left: 10%;
             padding-right: 10%;
         }
-        
         img {
             /* Just in case there are inline attributes */
             width: 100% !important;
@@ -661,22 +620,19 @@ input[type="submit"],
 
 
 /* Footer section */
+
 .footer {
     margin: 0 30px 20px 30px;
-    
-    span, span a {
+    span,
+    span a {
         color: @secondary !important;
         font-size: 12px;
-        
-        
-        
         &.copy {
             display: block;
             @media @phones {
                 float: left;
             }
         }
-        
         &.creator {
             display: block;
             @media @phones {
@@ -685,6 +641,7 @@ input[type="submit"],
         }
     }
 }
+
 
 /* Modal */
 
@@ -706,13 +663,11 @@ input[type="submit"],
     bottom: 0;
     right: 0;
     width: 100%;
-    
     @media @tablets {
         top: 8%;
         left: 20%;
         width: 60%;
     }
-    
     button.close {
         outline: none;
         width: 50px;
@@ -725,7 +680,6 @@ input[type="submit"],
         padding-bottom: 4px;
         border: @primary solid 2px;
         z-index: 99999999;
-        
         @media @tablets {
             width: 30px;
             height: 30px;
@@ -745,16 +699,12 @@ input[type="submit"],
             right: 40px;
         }
     }
-    
     label.checkbox {
         max-width: 26%;
         font-size: 14px;
-        
         @media @phones {
             font-size: 16px;
         }
-        
-        
     }
     input[type="text"],
     input[type="email"],
@@ -766,20 +716,15 @@ input[type="submit"],
     }
     .sketchfab-embed-wrapper {
         width: 90%;
-        
         @media @phones {
             width: 100%;
         }
-        
         iframe {
             width: 100%;
-            
             max-height: 300px;
-        
             @media @phones {
                 max-height: 400px
             }
-            
             @media @monitors {
                 max-height: 900px;
             }

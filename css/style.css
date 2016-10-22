@@ -2,7 +2,7 @@
 /* General Styles */
 /* Font */
 @font-face {
-  font-family: ApercuBold ;
+  font-family: ApercuBold;
   src: url(apercuBold.woff2);
 }
 @font-face {
@@ -218,12 +218,7 @@ a {
 }
 @media only screen and (min-width : 768px) {
   .section .header.left {
-    left: 120px;
-  }
-}
-@media only screen and (min-width : 1500px) {
-  .section .header.left {
-    left: 10%;
+    left: 80px;
   }
 }
 .section .header.right {
@@ -233,18 +228,8 @@ a {
 }
 @media only screen and (min-width : 768px) {
   .section .header.right {
-    right: 120px;
+    right: 80px;
   }
-}
-@media only screen and (min-width : 1500px) {
-  .section .header.right {
-    right: 10%;
-  }
-}
-.section .row {
-  padding-left: 10%;
-  width: 80%;
-  padding-right: 10%;
 }
 button,
 input[type="submit"],
