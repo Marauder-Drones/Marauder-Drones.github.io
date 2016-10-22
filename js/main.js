@@ -37,7 +37,9 @@ $.onReady(function(){
         $.style(modalID, "display", "inherit");
         $.style(".modal-overlay", "display", "inherit");
         $.style("body", "overflow", "hidden");
-        $.style("body", "height", "0");
+        if (window.innerWidth < 480){
+            $.style("body", "height", "0"); //iOS scroll fix
+        }
         setTimeout(function(){
             $.style(modalID, "opacity", "1");
             $.style(".modal-overlay", "opacity", "1");
@@ -50,7 +52,7 @@ $.onReady(function(){
     
     $.event(".modal .close", "click", function(){
         hideModal();
-    });
+    480
     
     $.event(".cta", "click", function(event){
         event.stopPropagation();
