@@ -715,6 +715,9 @@ input[type="submit"]:hover,
 .modal input {
   max-width: 320px;
 }
+.modal fieldset.name {
+  margin-bottom: 0;
+}
 .modal .sketchfab-embed-wrapper {
   width: 90%;
 }
