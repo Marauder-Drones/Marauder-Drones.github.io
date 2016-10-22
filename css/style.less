@@ -695,9 +695,8 @@ input[type="submit"],
         position: absolute;
         top: 40px;
         left: 40px;
-        @media @tablets {
-            right: 40px;
-        }
+        bottom: 40px;
+        right: 40px;
     }
     label.checkbox {
         max-width: 26%;
@@ -718,19 +717,13 @@ input[type="submit"],
         margin-bottom: 0;
     }
     .sketchfab-embed-wrapper {
-        width: 90%;
-        @media @phones {
-            width: 100%;
-        }
+        width: 100%;
+        height: 80%;
+        
         iframe {
             width: 100%;
-            max-height: 300px;
-            @media @phones {
-                max-height: 400px
-            }
-            @media @monitors {
-                max-height: 900px;
-            }
+            height: 100%;
+            max-height: none;
         }
     }
     .spacer {
