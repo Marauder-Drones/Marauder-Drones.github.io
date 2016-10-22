@@ -3,11 +3,11 @@
 /* Font */
 @font-face {
   font-family: ApercuBold;
-  src: url(apercuBold.woff2), format('woff2'), url(apercuLight.ttf), format('truetype'), url(apercuLight.otf), format('opentype');
+  src: url(apercuBold.otf);
 }
 @font-face {
   font-family: ApercuLight;
-  src: url(apercuLight.woff2), format('woff2'), url(apercuLight.ttf), format('truetype'), url(apercuLight.otf), format('opentype');
+  src: url(apercuLight.otf);
 }
 /* Custom scrollbars */
 ::-webkit-scrollbar {
