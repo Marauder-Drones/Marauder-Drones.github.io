@@ -713,7 +713,7 @@ input[type="submit"]:hover,
   width: 85%;
 }
 .modal input {
-  max-width: 300px;
+  max-width: 320px;
 }
 .modal .sketchfab-embed-wrapper {
   width: 90%;
